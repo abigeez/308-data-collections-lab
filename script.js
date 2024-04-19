@@ -15,3 +15,26 @@ for(let i=0;i<rows.length;i++){
 }
 // console logging the cells by their iteration which produces the value of the first four columns
 
+////part 2 expanding functionality
+let csvStr1 = "ID,Name,Occupation,Age,\n42,Bruce,Knight,41,\n57,Bob,Fry Cook,19,\n63,Blaine,Quiz Master,58,\n98,Bill,Doctor's Assistant,26"
+let numCol = [];
+innerArray=[];
+
+//variable that stores the number of columns
+
+cells=rows[0].split(",");
+//declaring the amt of columns that are in the first row.
+
+numCol=cells.length;
+console.log(`There are: ${numCol}`) ;
+//logging the amount of columns there are 
+
+for(i=0;i<rows.length;i++) {
+    cells = rows[i].split(",");
+    if(cells.length>numCol){
+        cells.length=numCol
+    }
+    innerArray.push(cells)
+}
+console.log(`2d array`)
+console.log(innerArray)
