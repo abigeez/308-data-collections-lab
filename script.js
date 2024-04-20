@@ -63,23 +63,45 @@ console.log(innerArray);
 
 
 //part3 transforming data 
+///////////
+
+
 let newArray = [];
  let objectOne={};
  //declaring empty object and empty new array to store in object
 
- headerCol=innerArray[0];
-console.log(headerCol)
+ let headerCol
+let newObject={}
 
-for (i=0;i<headerCol.length;i++){
-    objectOne[i]=headerCol[i]
-    // objectOne[0]=innerArray[0];
-   
+////// for loop to create array headings into object then back to array
+
+for (i=0;i<innerArray.length;i++){
+    headerCol=innerArray[0];
+    console.log(headerCol);
+    //creating columns to put into object
+
+    
+    objectOne[i]=headerCol;
     console.log(objectOne)
+//nestd for loop inside a for loop
+    for(j=1;j<objectOne.length;j++){
+      
+    }
+}
+//     console.log(objectOne)
+//   objectOne=newArray[i]
+//     console.log(newArray)
+//   for(j=1;j<objectOne.length;j++) {
+//     objectOne[i,1]=innerArray[0,j]; 
+
+    // console.log(valOne)
   
+
+
     // for(j=1;j<headerCol.length;j++){
    
     
-}
+
 
 
 
