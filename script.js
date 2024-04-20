@@ -19,8 +19,10 @@ for(let i=0;i<rows.length;i++){
 ////part 2 expanding functionality
 let csvStr1 = "ID,Name,Occupation,Age,\n42,Bruce,Knight,41,\n57,Bob,Fry Cook,19,\n63,Blaine,Quiz Master,58,\n98,Bill,Doctor's Assistant,26"
 let numCol = (`${cells[0]} ${cells[1]} ${cells[2]} ${cells[3]}`);
-innerArray=[];
+// let twodArray=[innerArray];
+let innerArray=[];
 
+rows=csvStr1.split("\n")
 //variable that stores the number of columns
 
 cells=rows[0].split(",");
@@ -36,16 +38,21 @@ console.log(`There are: ${numCol}`) ;
 // a loop that works with n amount of columns 
 for(i=0;i<rows.length;i++) {
     cells = rows[i].split(",");
+    
     if(cells.length>numCol){
         cells.length=numCol
     }
-    innerArray.push(cells)
+    
+    innerArray.push(cells);
+   cells=innerArray;
+   
+
 }
-console.log(`2d array`)
-console.log(innerArray)
 
-
-
-
+console.log(cells)
+cells.push(innerArray);
+console.log("this is two-dimensional array")
+console.log(innerArray);
+//2d array is now within the innerarray;
 //part3 transforming data 
 
