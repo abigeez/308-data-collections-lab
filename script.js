@@ -18,12 +18,19 @@ for(let i=0;i<rows.length;i++){
 
 ////part 2 expanding functionality
 let csvStr1 = "ID,Name,Occupation,Age,\n42,Bruce,Knight,41,\n57,Bob,Fry Cook,19,\n63,Blaine,Quiz Master,58,\n98,Bill,Doctor's Assistant,26"
-let numCol = (`${cells[0]} ${cells[1]} ${cells[2]} ${cells[3]}`);
-// let twodArray=[innerArray];
+let numCol  
+
+//variable that stores the number of columns
+
+rows=[]
+cells=[]
+
+// (`${cells[0]} ${cells[1]} ${cells[2]} ${cells[3]}`);
+
 let innerArray=[];
 
 rows=csvStr1.split("\n")
-//variable that stores the number of columns
+/// separating into arrays
 
 cells=rows[0].split(",");
 //declaring the amt of columns that are in the first row.
@@ -44,15 +51,21 @@ for(i=0;i<rows.length;i++) {
     }
     
     innerArray.push(cells);
-   cells=innerArray;
+//    cells=innerArray;
    
 
 }
 
-console.log(cells)
-cells.push(innerArray);
+
 console.log("this is two-dimensional array")
 console.log(innerArray);
 //2d array is now within the innerarray;
+
+
 //part3 transforming data 
+let newArray = []
+const objectOne={}
+headerCol=
+
+for(i=0;)
 
