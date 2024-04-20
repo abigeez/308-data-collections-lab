@@ -63,14 +63,22 @@ console.log(innerArray);
 
 
 //part3 transforming data 
-let newArray = []
-const objectOne={}
+let newArray = [];
+ let objectOne={};
+ //declaring empty object and empty new array to store in object
 
+ headerCol=innerArray[0];
+console.log(headerCol)
 
-for (i=0;i<innerArray.length;i++){
-    headerCol=innerArray[0];
+for (i=0;i<headerCol.length;i++){
+    objectOne[i]=headerCol[i]
+    // objectOne[0]=innerArray[0];
    
-    console.log(headerCol)
+    console.log(objectOne)
+  
+    // for(j=1;j<headerCol.length;j++){
+   
+    
 }
 
 
