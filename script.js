@@ -76,7 +76,7 @@ let newObject={}
 ////// for loop to create array headings into object then back to array
 
 for (i=0;i<innerArray.length;i++){
-    headerCol=innerArray[0];
+    headerCol=innerArray[i,0];
     console.log(headerCol);
     //creating columns to put into object
 
@@ -85,7 +85,8 @@ for (i=0;i<innerArray.length;i++){
     console.log(objectOne)
 //nestd for loop inside a for loop
     for(j=1;j<objectOne.length;j++){
-      
+      objectOne=innerArray[0,j]
+      console.log(innerArray)
     }
 }
 //     console.log(objectOne)
