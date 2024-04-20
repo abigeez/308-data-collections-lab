@@ -65,7 +65,13 @@ console.log(innerArray);
 //part3 transforming data 
 let newArray = []
 const objectOne={}
-headerCol=
 
-for(i=0;)
+
+for (i=0;i<innerArray.length;i++){
+    headerCol=innerArray[0];
+   
+    console.log(headerCol)
+}
+
+
 
